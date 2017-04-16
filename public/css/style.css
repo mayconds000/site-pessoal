@@ -1,15 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Muli|Playfair+Display");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Muli, sans-serif;
+  font-size: 16px; }
 
 img {
   width: 100%; }
 
-@media screen and (max-width: 320px) {
-  background-color: blue; }
+body {
+  min-width: 320px; }
 
-@media screen and (min-width: 321px) and (max-width: 760px) {
-  background-color: red; }
+.menu {
+  width: 100vw;
+  height: 60px;
+  top: 0;
+  position: fixed;
+  background-color: #fff;
+  border-bottom: 3px solid #55bdb7; }
+  .menu .menu-fixed {
+    max-width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #014779; }
+    .menu .menu-fixed .menu-logo {
+      margin-left: 10px;
+      font-size: 1.6em;
+      font-family: 'Playfair Display', serif;
+      font-weight: 650; }
+    .menu .menu-fixed .menu-lg {
+      margin-right: 20px; }
+      .menu .menu-fixed .menu-lg ul {
+        list-style: none;
+        margin-top: 6px; }
+        .menu .menu-fixed .menu-lg ul li {
+          display: inline;
+          margin-left: 12px;
+          padding: 5px 8px; }
+          .menu .menu-fixed .menu-lg ul li:hover {
+            background-color: #ff2a6b; }
+            .menu .menu-fixed .menu-lg ul li:hover a {
+              color: white;
+              font-weight: 600; }
+          .menu .menu-fixed .menu-lg ul li a {
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            text-decoration: none;
+            color: #014779; }
+    .menu .menu-fixed .menu-hamb {
+      margin-right: 10px; }
 
-@media screen and (min-width: 761px) {
-  background-color: yellow; }
+.header-home {
+  color: white;
+  width: 100%;
+  margin-top: 60px;
+  height: calc(100vh - 60px);
+  background-image: url("../images/Geometric-Background-1.jpg");
+  background-attachment: fixed;
+  background-position: center top;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header-home h1 {
+    text-align: center;
+    width: 100%;
+    max-width: 980px;
+    font-size: 2.5em;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+.about-me {
+  color: #0071b5;
+  text-align: center;
+  max-width: 980px;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100vw;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 100px; }
+  .about-me h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    padding-top: 100px; }
+  .about-me p {
+    margin-bottom: 10px;
+    color: #014779; }
+  .about-me button {
+    margin-top: 50px;
+    padding: 10px 15px;
+    background-color: #00aeea;
+    border: 1px solid #fff;
+    color: white;
+    cursor: pointer;
+    font-weight: 600; }
+    .about-me button:hover {
+      background: #ff2a6b; }
+
+.habilities {
+  background-color: #0071b5;
+  padding: 50px 0;
+  border-top: 3px solid #55bdb7;
+  text-align: center;
+  color: white; }
+  .habilities h2 {
+    font-size: 2.5em; }
+  .habilities h3 {
+    font-size: 1.5em; }
+  .habilities .wrap {
+    display: flex;
+    flex-direction: column; }
+    .habilities .wrap div.left {
+      margin-bottom: 20px;
+      margin-top: 10px; }
+    .habilities .wrap div.right {
+      margin-top: 10px; }
+
+.portfolio {
+  max-width: 980px;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  padding: 50px 0;
+  color: #0071b5; }
+  .portfolio h2 {
+    font-size: 2.5em; }
+
+@media screen and (max-width: 635px) {
+  .menu-lg {
+    display: none; } }
+
+@media screen and (min-width: 636px) {
+  .menu-hamb {
+    display: none; }
+  .habilities .wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .habilities .wrap div.left {
+      text-align: right;
+      margin-right: 40px; }
+      .habilities .wrap div.left ul {
+        list-style: none; }
+    .habilities .wrap div.right {
+      text-align: left;
+      margin-left: 40px; }
+      .habilities .wrap div.right ul {
+        list-style: none; } }
