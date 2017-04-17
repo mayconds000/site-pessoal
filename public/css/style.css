@@ -17,10 +17,11 @@ body {
 .menu {
   width: 100vw;
   height: 60px;
-  top: 0;
   position: fixed;
+  top: 0;
   background-color: #fff;
-  border-bottom: 3px solid #55bdb7; }
+  border-bottom: 3px solid #55bdb7;
+  z-index: 999; }
   .menu .menu-fixed {
     max-width: 980px;
     height: 100%;
@@ -41,7 +42,6 @@ body {
         margin-top: 6px; }
         .menu .menu-fixed .menu-lg ul li {
           display: inline;
-          margin-left: 12px;
           padding: 5px 8px; }
           .menu .menu-fixed .menu-lg ul li:hover {
             background-color: #ff2a6b; }
@@ -61,19 +61,58 @@ body {
   width: 100%;
   margin-top: 60px;
   height: calc(100vh - 60px);
-  background-image: url("../images/Geometric-Background-1.jpg");
+  position: relative;
+  background-image: url("../images/pretend-city-blue-geometric-background-1.jpg");
   background-attachment: fixed;
   background-position: center top;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 1; }
   .header-home h1 {
     text-align: center;
     width: 100%;
     max-width: 980px;
     font-size: 2.5em;
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    margin-top: -70px; }
+  .header-home .arrow-bounce {
+    background-image: url("../images/arrow-bounce.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    animation: bounce 2s infinite; }
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
 
 .about-me {
   color: #0071b5;
@@ -126,15 +165,76 @@ body {
   max-width: 980px;
   padding-left: 10%;
   padding-right: 10%;
-  text-align: center;
   padding: 50px 0;
-  color: #0071b5; }
+  color: #0071b5;
+  margin: 0 auto;
+  text-align: center; }
   .portfolio h2 {
     font-size: 2.5em; }
+  .portfolio figure {
+    width: 100%;
+    background-color: #ccccff;
+    border-bottom: 2px solid white; }
+
+.contact {
+  background-image: url("../images/pretend-city-blue-geometric-background-1.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  padding: 50px 0;
+  width: 100%; }
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 50px; }
+  .contact .wrap {
+    margin: 0 auto;
+    display: flex; }
+    .contact .wrap .form-contact {
+      width: 280px;
+      margin-right: 40px; }
+      .contact .wrap .form-contact input, .contact .wrap .form-contact textarea {
+        font-size: 0.8em;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+        line-height: 20px;
+        border: 1px solid #ddd; }
+      .contact .wrap .form-contact input[type=submit] {
+        background-color: #ff2a6b;
+        border: none;
+        color: white;
+        font-weight: 600; }
+    .contact .wrap .contacts {
+      text-align: left;
+      color: white;
+      width: 300px;
+      margin-left: 40px; }
+      .contact .wrap .contacts a {
+        color: white;
+        text-decoration: none; }
+      .contact .wrap .contacts .social-media a img {
+        width: 50px; }
+
+@media screen and (min-width: 321px) {
+  .portfolio figure {
+    width: 50%;
+    float: left; } }
 
 @media screen and (max-width: 635px) {
   .menu-lg {
-    display: none; } }
+    display: none; }
+  .contact .wrap {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0; }
+    .contact .wrap .form-contact {
+      margin-right: 0; }
+    .contact .wrap .contacts {
+      text-align: center;
+      margin-left: 0;
+      margin-top: 30px; } }
 
 @media screen and (min-width: 636px) {
   .menu-hamb {
@@ -152,4 +252,7 @@ body {
       text-align: left;
       margin-left: 40px; }
       .habilities .wrap div.right ul {
-        list-style: none; } }
+        list-style: none; }
+  .contact .wrap {
+    flex-direction: row;
+    justify-content: center; } }
