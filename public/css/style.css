@@ -168,17 +168,19 @@ body {
   padding: 50px 0;
   color: #0071b5;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  height: auto;
+  overflow: hidden; }
   .portfolio h2 {
-    font-size: 2.5em; }
-  .portfolio figure {
-    width: 100%;
-    background-color: #ccccff;
-    border-bottom: 2px solid white; }
+    font-size: 2.5em;
+    margin-bottom: 50px; }
+  .portfolio a figure {
+    width: 100%; }
+    .portfolio a figure img {
+      display: block; }
 
 .contact {
   background-image: url("../images/pretend-city-blue-geometric-background-1.jpg");
-  background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
   text-align: center;
@@ -207,20 +209,17 @@ body {
         color: white;
         font-weight: 600; }
     .contact .wrap .contacts {
-      text-align: left;
+      text-align: center;
       color: white;
       width: 300px;
       margin-left: 40px; }
       .contact .wrap .contacts a {
         color: white;
         text-decoration: none; }
-      .contact .wrap .contacts .social-media a img {
-        width: 50px; }
-
-@media screen and (min-width: 321px) {
-  .portfolio figure {
-    width: 50%;
-    float: left; } }
+      .contact .wrap .contacts .social-media {
+        margin-top: 10px; }
+        .contact .wrap .contacts .social-media a img {
+          width: 50px; }
 
 @media screen and (max-width: 635px) {
   .menu-lg {
@@ -239,6 +238,9 @@ body {
 @media screen and (min-width: 636px) {
   .menu-hamb {
     display: none; }
+  .header-home {
+    padding-left: 15%;
+    padding-right: 15%; }
   .habilities .wrap {
     flex-direction: row;
     flex-wrap: wrap;
@@ -253,6 +255,9 @@ body {
       margin-left: 40px; }
       .habilities .wrap div.right ul {
         list-style: none; }
+  .portfolio a figure {
+    width: 50%;
+    float: left; }
   .contact .wrap {
     flex-direction: row;
     justify-content: center; } }
