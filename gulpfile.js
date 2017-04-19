@@ -1,7 +1,14 @@
-const gulp        = require('gulp')
-const browserSync = require('browser-sync').create();
-const sass        = require('gulp-sass');
-const concat      = require('gulp-concat')
+"use strict"
+const gulp          = require('gulp')
+const browserSync   = require('browser-sync').create()
+const sass          = require('gulp-sass')
+const concat        = require('gulp-concat')
+const autoprefixer  = require('gulp-autoprefixer')
+
+// Options
+const autoprefixerOptions = {
+  browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
+}
 
 
 // Static server + watching sass/html files
@@ -20,6 +27,7 @@ gulp.task('serve', ['sass'], function() {
 gulp.task('sass', function() {
   return gulp.src('./sass/*.sass')
           .pipe(sass().on('error', sass.logError))
+          .pipe(autoprefixer(autoprefixerOptions))
           .pipe(gulp.dest('./public/css'))
           .pipe(browserSync.stream())
 });
