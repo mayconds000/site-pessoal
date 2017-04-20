@@ -66,7 +66,7 @@ body {
   margin-top: 60px;
   height: calc(100vh - 60px);
   position: relative;
-  background-image: url("../images/pretend-city-blue-geometric-background-1.jpg");
+  background-image: url("../images/programador.jpg");
   background-attachment: fixed;
   background-position: center top;
   display: -webkit-box;
@@ -86,7 +86,8 @@ body {
     font-size: 2.5em;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: -70px; }
+    margin-top: -70px;
+    color: blue; }
   .header-home .arrow-bounce {
     background-image: url("../images/arrow-bounce.png");
     background-repeat: no-repeat;
