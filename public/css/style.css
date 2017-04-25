@@ -18,7 +18,7 @@ body {
   position: fixed;
   top: 0;
   background-color: #fff;
-  border-bottom: 3px solid #55bdb7;
+  border-bottom: 3px solid #00aeea;
   z-index: 999; }
   .menu .menu-fixed {
     max-width: 980px;
@@ -43,20 +43,26 @@ body {
       margin-right: 20px; }
       .menu .menu-fixed .menu-lg ul {
         list-style: none;
-        margin-top: 6px; }
+        margin-top: 0px; }
         .menu .menu-fixed .menu-lg ul li {
-          display: inline;
-          padding: 5px 8px; }
+          display: inline-block;
+          padding: 10px 8px;
+          -webkit-transform: skewx(-20deg);
+                  transform: skewx(-20deg);
+          background-color: #00aeea;
+          transition: background-color 0.2s ease-out; }
           .menu .menu-fixed .menu-lg ul li:hover {
             background-color: #ff2a6b; }
             .menu .menu-fixed .menu-lg ul li:hover a {
-              color: white;
               font-weight: 600; }
           .menu .menu-fixed .menu-lg ul li a {
             font-family: 'Playfair Display', serif;
-            font-weight: 500;
+            font-weight: 600;
             text-decoration: none;
-            color: #014779; }
+            color: white;
+            -webkit-transform: skewX(20deg);
+                    transform: skewX(20deg);
+            display: block; }
     .menu .menu-fixed .menu-hamb {
       margin-right: 10px; }
 
@@ -69,6 +75,7 @@ body {
   background-image: url("../images/pretend-city-blue-geometric-background-1.jpg");
   background-attachment: fixed;
   background-position: center top;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +93,11 @@ body {
     font-size: 2.5em;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: -70px; }
+    margin-top: -70px;
+    margin-left: -2000px;
+    color: white;
+    opacity: 0;
+    transition: all 1s ease-in-out; }
   .header-home .arrow-bounce {
     background-image: url("../images/arrow-bounce.png");
     background-repeat: no-repeat;
@@ -128,6 +139,7 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   width: 100vw;
+  height: 100vh;
   max-width: 980px;
   margin: 0 auto;
   padding-bottom: 100px; }
@@ -153,13 +165,18 @@ body {
   background-color: #2c3e50;
   background: linear-gradient(to bottom right, #3394EC, #2EDFCA);
   padding: 50px 0;
-  border-top: 3px solid #55bdb7;
   text-align: center;
-  color: white; }
+  color: white;
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+  height: 100vh; }
   .habilities h2 {
     font-size: 2.5em; }
   .habilities h3 {
     font-size: 1.5em; }
+  .habilities h2, .habilities .wrap {
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg); }
   .habilities .wrap {
     display: -webkit-box;
     display: -ms-flexbox;
