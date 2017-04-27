@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg4557"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="hamburguer-menu.svg">
+  <defs
+     id="defs4559">
+    <linearGradient
+       id="linearGradient8287"
+       osb:paint="solid"
+       gradientTransform="matrix(-0.47847913,0.47847913,-0.47847913,-0.47847913,19556.026,1656.6841)">
+      <stop
+         style="stop-color:#014779;stop-opacity:1;"
+         offset="0"
+         id="stop8289" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="200.48691"
+     inkscape:cy="714.60191"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4562">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4238"
+       transform="matrix(0.81134452,0,0,0.90550512,-34.090331,301.74653)"
+       style="display:inline;fill:url(#linearGradient8287)"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72">
+      <g
+         id="g4251"
+         style="fill:url(#linearGradient8287)">
+        <rect
+           style="fill:url(#linearGradient8287);fill-opacity:1;stroke:#f0f3f1"
+           id="rect4226"
+           width="42"
+           height="3.5"
+           x="264"
+           y="15.744322" />
+        <rect
+           y="25.75"
+           x="264"
+           height="3.5"
+           width="42"
+           id="rect4228"
+           style="fill:url(#linearGradient8287);fill-opacity:1;stroke:#f0f3f1" />
+        <rect
+           style="fill:url(#linearGradient8287);fill-opacity:1;stroke:#f0f3f1"
+           id="rect4230"
+           width="42"
+           height="3.5"
+           x="264"
+           y="35.75568" />
+      </g>
+    </g>
+  </g>
+</svg>

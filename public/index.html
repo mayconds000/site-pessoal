@@ -4,24 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Maycon DS Desenvolvedor WEB</title>
+  <title>Maycon Desenvolvedor WEB</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <div class="menu">
-
     <div class="menu-fixed">
-      <a class="menu-logo">Maycon DS</a>
+      <a class="menu-logo">Maycon</a>
       <span class="menu-lg">
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="#about-me">Sobre mim</a></li>
+          <li><a href="#about-me">Habilidades</a></li>
           <li><a href="#portfolio">Portfólio</a></li>
           <!--<li><a href="#blog">Blog</a></li>-->
           <li><a href="#contact">Contato</a></li>
         </ul>
       </span>
-      <span class="menu-hamb">III</span>
+      <span class="menu-hamb">
+        <div></div>
+        <div></div>
+        <div></div>
+      </span>
     </div> 
 
   </div><!--end of Menu-->
@@ -29,12 +33,14 @@
   <!--<div style='height:60px; width:0;'></div>-->
 
   <header id="header-home" class="header-home">
-    <h1>Olá meu nome é Maycon e sou desenvolvedor web</h1>
+    <h1>Olá, seja muito bem vindo!!!</h1>
+    <h2>Menu nome é Maycon Donizete e aqui você irá encontrar alguns dos meus projetos mais recentes e um pouco mais de informações sobre mim. 
+      Fique a vontate e aproveite pra dar uma olhadinha nos meus trabalhos e caso você goste saiba que podemos trabalhar juntos. Entre em contato!</h2>
     <span class="arrow-bounce"></span>
   </header>
 
   <section id="about-me" class="about-me">
-    <h2>Sobre mim</h2>
+    <h2>SOBRE MIM</h2>
     <p>Sou graduado em tecnólogo em sistemas para internet
       pela Unicesumar.
     </p>
@@ -45,40 +51,62 @@
     <button>Baixe aqui o meu Currículo</button>
   </section><!--end of About-me-->
 
-  <section id="habilities" class="habilities">
-    <h2>Habilidades</h2>
-    <section class="wrap">
-      <div class="left">
-        <h3>Técnicas</h3>
+  <section id="abilities" class="abilities">
+    <h2>HABILIDADES</h2>
+
+
+    <section class="abilities-wrap">
+      <div class="abilities-wrap--item">
+        <h3>BANCO DE DADOS</h3>
+        <ul>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+
+      <div class="abilities-wrap--item">
+        <h3>FRONTEND</h3>
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
           <li>Javascript</li>
-          <li>NodeJS</li>
-          <li>PHP</li>
-          <li>Grunt / Gulp</li>
-          <li>Webpack</li>
-          <li>React / Redux</li>
-          <li>Sass</li>
-          <li>Photoshop</li>
+          <li>Bootstrap</li>
+          <li>JQuery</li>
+          <li>Angularjs 1.x</li>
+          <li>ReactJS</li>
           <li>Responsividade</li>
         </ul>
       </div>
-      <div class="right">
-        <h3>Pessoais</h3>
+
+      <div class="abilities-wrap--item">
+        <h3>BACKEND</h3>
         <ul>
-          <li>Inglês intermediário</li>
-          <li>Comunicativo</li>
-          <li>Responsável</li>
-          <li>Encara os desafios</li>
-          <li>Adoro aprender</li>
+          <li>PHP</li>
+          <li>Orientação a Objetos</li>
+          <li>MVC</li>
+          <li>SlimFramework</li>
+          <li>NodeJS</li>
         </ul>
       </div>
+
+      <div class="abilities-wrap--item">
+        <h3>FERRAMENTAS</h3>
+        <ul>
+          <li>Photoshop</li>
+          <li>Git</li>
+          <li>Inkscape</li>
+          <li>Yarn</li>
+          <li>Grunt / Gulp</li>
+          <li>Webpack</li>
+        </ul>
+      </div>
+
     </section>
+      
   </section> <!--end of habilities -->
 
   <section id="portfolio" class="portfolio">
-    <h2>Portfólio</h2>
+    <h2>PORTFÓLIO</h2>
     <a href="">
       <figure>
         <img src="images/project-01.jpg" alt="">
@@ -94,7 +122,7 @@
   </section><!--end of Portifolio -->
 
   <section id="contact" class="contact">
-    <h2>Contatos</h2>
+    <h2>CONTATOS</h2>
     <div class="wrap">
 
       <div class="form-contact">
@@ -119,6 +147,18 @@
 
     </div>
   </section> <!--enf of Contact-->
+
+  <section id="menu-mobile" class="menu-mobile"> 
+    <h1>Menu</h1>
+    <ul>
+      <li><a href="/">Home</a></li>
+          <li><a href="#about-me">Sobre mim</a></li>
+          <li><a href="#about-me">Habilidades</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <!--<li><a href="#blog">Blog</a></li>-->
+          <li><a href="#contact">Contato</a></li>
+    </ul>
+  </section>
 
 </body>
 <script src="all.js"></script>

@@ -1,6 +1,22 @@
 $(function() {
-  let $headerHome = $('#header-home')
+  const $headerHome = $('#header-home')
   const $headerHomeH1 = $('#header-home > h1')[0]
+  let $menuMobile = $('#menu-mobile')[0]
+  const $menuHamb = $('.menu-hamb')
+  console.log($menuMobile)
+
+
+  /**
+   * Funcion to call menu mobile
+   */
+  $menuHamb.click(function() {
+   $menuMobile.style.display = 'block'
+   setTimeout(function() {
+      $menuMobile.style.right = '0'
+   }, 1)
+   
+  })
+
 
   
   /**
@@ -10,8 +26,7 @@ $(function() {
     $wScroll = $(this).scrollTop()
     
     if($wScroll > $headerHome.offset().top - 60 && $wScroll < $headerHome.height() + $headerHome.offset().top) {
-      $headerHome.css('transform', 'scale(' + ($wScroll / 5800 + 1) + ')')
-      
+      $headerHome.css('background-position', '0px '+($wScroll / 16) + 'px')
     }
   });
 
@@ -20,7 +35,6 @@ $(function() {
    * Functions with fade
    */
   const setTime = (elm, func, time) => {
-    console.log(func)
     setTimeout(() => {
       fadeIn(elm)
       leftToRight(elm)
@@ -34,5 +48,5 @@ $(function() {
     elm.style.marginLeft = 0
   }
   
-  setTime($headerHomeH1, [fadeIn, leftToRight], 1000)
+  setTime($headerHomeH1, [fadeIn, leftToRight], 300)
 })
