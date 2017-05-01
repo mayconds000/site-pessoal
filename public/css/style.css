@@ -42,7 +42,7 @@ body {
       font-size: 1.8em;
       font-family: Muli, sans-serif;
       font-weight: bold;
-      color: #96C1CF; }
+      color: #ED184C; }
     .menu .menu-fixed .menu-lg {
       margin-right: 20px; }
       .menu .menu-fixed .menu-lg ul {
@@ -85,7 +85,7 @@ body {
         background-color: #ED184C; }
 
 .menu-mobile {
-  background-color: #ED184C;
+  background-color: #43cea2;
   height: 100vh;
   min-width: 200px;
   width: 85%;
@@ -98,7 +98,26 @@ body {
   padding-right: 20px;
   color: white;
   display: none;
-  transition: all 0.3s; }
+  transition: all 0.5s; }
+  .menu-mobile .close {
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 20px;
+    text-decoration: none; }
   .menu-mobile ul {
     list-style: none; }
     .menu-mobile ul li {
@@ -220,16 +239,18 @@ body {
     margin-bottom: 10px;
     line-height: 25px;
     color: #333; }
-  .about-me button {
+  .about-me a {
+    text-decoration: none;
     margin-top: 50px;
-    padding: 10px 15px;
-    background-color: #96C1CF;
+    padding: 10px 10px;
+    background-color: #43cea2;
     border: 1px solid #fff;
     color: white;
     cursor: pointer;
     font-weight: 600;
-    transition: background 0.3s; }
-    .about-me button:hover {
+    transition: background 0.3s;
+    border-radius: 3px; }
+    .about-me a:hover {
       background: #ED184C; }
 
 .abilities {
@@ -321,12 +342,13 @@ body {
         line-height: 20px;
         border: 1px solid #ddd; }
       .contact .wrap .form-contact input[type=submit] {
-        background-color: #96C1CF;
+        background-color: #43cea2;
         border: none;
         color: white;
         font-weight: 600;
         cursor: pointer;
-        transition: background-color 0.3s ease-in; }
+        transition: background-color 0.3s ease-in;
+        border-radius: 3px; }
         .contact .wrap .form-contact input[type=submit]:hover {
           background-color: #ED184C; }
     .contact .wrap .contacts {

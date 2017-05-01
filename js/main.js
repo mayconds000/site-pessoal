@@ -1,21 +1,39 @@
 $(function() {
   const $headerHome = $('#header-home')
   const $headerHomeH1 = $('#header-home > h1')[0]
-  let $menuMobile = $('#menu-mobile')[0]
+  const $menuMobile = $('#menu-mobile')[0]
   const $menuHamb = $('.menu-hamb')
-  console.log($menuMobile)
+  const $menuClose = $('#menu-mobile').children()
 
 
   /**
-   * Funcion to call menu mobile
+   * Funcion to call and close menu mobile
    */
-  $menuHamb.click(function() {
-   $menuMobile.style.display = 'block'
-   setTimeout(function() {
-      $menuMobile.style.right = '0'
-   }, 1)
-   
-  })
+
+  function callMenuClick() {
+    if( $menuMobile.style.display === "none" || $menuMobile.style.display === ""){
+      $menuMobile.style.display = 'block'
+      $menuClose.click(callMenuClose)
+      console.log($menuClose)
+      setTimeout(function() {
+          $menuMobile.style.right = '0'
+      }, 100)
+    } else {
+      callMenuClose()
+    }
+  }
+
+  function callMenuClose() {
+      console.log('close')
+      $menuMobile.style.right = '-2000px'
+      setTimeout(() => {
+      $menuMobile.style.display = 'none'
+      }, 500)
+  }
+
+  $menuHamb.click(callMenuClick)
+  console.log($menuHamb)
+  
 
 
   
