@@ -27,8 +27,9 @@ $mail->Password = "Mxds@326";
 * Caso o SMTPDebug estiver abilitado da erro no redirect devido ao 
 * `echo` 
 */
-//$mail->SMTPDebug = 3;
-$mail->SMTPSecure = 'tls';
+//$mail->SMTPDebug = 2;
+// se abilitar tls não envia pelo uolhost
+//$mail->SMTPSecure = 'tls';
 $mail->Port = 587;
 
 $mail->CharSet = "utf8";
@@ -36,7 +37,7 @@ $mail->setFrom("site@mayconds.com", "{$nome}");
 $mail->addAddress("mayconds000@gmail.com");
 $mail->isHTML(true);
 
-$mail->Subject = "Orcamento pelo site";
+$mail->Subject = "Contato pelo site";
 $mail->Body = "Enviado por: {$nome} <br /> 
                   Telefone: {$telefone}<br /> 
                      Email: {$email}<br /> 

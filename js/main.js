@@ -30,11 +30,8 @@ $(function() {
   }
 
   $menuHamb.click(callMenuClick)
-  console.log($menuHamb)
-  
 
 
-  
   /**
    * Functions with scroll
    */ 
@@ -50,7 +47,7 @@ $(function() {
   /**
    * Functions with fade
    */
-  const setTime = (elm, func, time) => {
+  const setTime = (elm, time) => {
     setTimeout(() => {
       fadeIn(elm)
       leftToRight(elm)
@@ -64,13 +61,30 @@ $(function() {
     elm.style.marginLeft = 0
   }
   
-  setTime($headerHomeH1, [fadeIn, leftToRight], 300)
+  setTime($headerHomeH1, 300)
 
 
   /**
    * Send Email
    */
+
+  const $msgBox  = $('#msgbox')[0]
+  console.log($msgBox)
   const $sendEmail = $('#sendEmail')
+
+  const callMsg = function(txt) {
+    $msgBox.style.display = 'block'
+    setTimeout(function() {
+      $msgBox.style.opacity = 1
+    }, 300)
+    setTimeout(function() {
+      $msgBox.style.opacity = 0
+      setTimeout(function(){
+        $msgBox.style.display = 'none'
+      }, 300)
+    }, 3000)
+  }
+
   $sendEmail.click(() => {
     let form = $('form')
     let formData =$('#form_envia_email').serialize()
@@ -79,7 +93,11 @@ $(function() {
       url: form.attr('action'),
       data: formData,
       success: function(msg) {
-        console.log(msg)
+        if( msg == 'error' ) {
+          callMsg('Email não enviado!')
+        } else {
+          callMsg('Email enviado com sucesso!')
+        }
       }
     })
   })

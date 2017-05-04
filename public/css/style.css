@@ -369,6 +369,19 @@ body {
         .contact .wrap .contacts .social-media a img {
           width: 50px; }
 
+#msgbox {
+  background-color: white;
+  border: 2px solid #43cea2;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  color: #43cea2;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: none;
+  opacity: 0;
+  transition: all 0.3s; }
+
 @media screen and (max-width: 635px) {
   html {
     font-size: 14px; }
