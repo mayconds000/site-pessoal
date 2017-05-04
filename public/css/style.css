@@ -139,7 +139,7 @@ body {
   position: relative;
   background-image: url("../images/download2.png");
   background-attachment: fixed;
-  background-position: top right;
+  background-position: left top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,9 +278,7 @@ body {
       -ms-flex-align: center;
           align-items: center; }
   .abilities h2 {
-    font-size: 2.5rem;
-    -webkit-transform: skewY(5deg);
-            transform: skewY(5deg); }
+    font-size: 2.5rem; }
   .abilities .abilities-wrap {
     margin-top: 30px;
     width: 100%;
@@ -291,9 +289,7 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-transform: skewY(5deg);
-            transform: skewY(5deg); }
+        justify-content: space-around; }
     .abilities .abilities-wrap .abilities-wrap--item {
       margin-top: 25px;
       padding: 0 10px 10px;
