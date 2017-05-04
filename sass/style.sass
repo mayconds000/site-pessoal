@@ -221,9 +221,11 @@ $title-color: #ED184C
   flex-direction: column
   justify-content: center
   align-items: center
+  padding-left: 10px
+  padding-right: 10px 
  
   h2
-    font-size: 2.5em
+    font-size: 2.5rem
     margin-bottom: 50px
     padding-top: 100px
     color: $title-color
@@ -251,29 +253,32 @@ $title-color: #ED184C
 
 .abilities
   background:
-    color: #000428
+    color: #43cea2
   //background: linear-gradient(to bottom right, #3394EC, #2EDFCA)
-  background: linear-gradient(to bottom right, #43cea2, #185a9d)
-  padding: 100px 0
+  //background: linear-gradient(to bottom, #43cea2, #185a9d)
+  background: linear-gradient(to bottom right, #43cea2, #00c9ff)
+  padding: 80px 0 100px
   text-align: center
   color: white
   transform: skewY(-5deg)
-  height: 100%
+  overflow: hidden
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
 
   h2
-    font-size: 2.5em
+    font-size: 2.5rem
+    transform: skewY(5deg)
 
   .abilities-wrap
-    margin-top: 50px
+    margin-top: 30px
     width: 100%
     max-width: 980px
     display: flex
     flex-wrap: wrap
     justify-content: space-around
+    transform: skewY(5deg)
 
     .abilities-wrap--item
       margin-top: 25px
@@ -300,7 +305,7 @@ $title-color: #ED184C
   h2
     color: #ED184C
     font-size: 2.5em
-    margin-bottom: 50px
+    margin-bottom: 80px
 
   a
     figure
@@ -321,7 +326,7 @@ $title-color: #ED184C
   width: 100%
 
   h2
-    font-size: 2rem
+    font-size: 2.5rem
     margin-bottom: 50px 
 
   .wrap
@@ -334,7 +339,7 @@ $title-color: #ED184C
       margin-right: 40px
 
 
-      input, textarea
+      input, textarea, #sendEmail
         font-size: 0.8em
         width: 100%
         margin-bottom: 10px
@@ -342,7 +347,8 @@ $title-color: #ED184C
         line-height: 20px
         border: 1px solid #ddd
       
-      input[type=submit]
+      #sendEmail
+        display: block
         background-color: $second-color
         border: none
         color: white
@@ -373,13 +379,6 @@ $title-color: #ED184C
         a
           img
             width: 50px
-
-
-@media screen and (max-width: 320px)
-  body  
-
-@media screen and (min-width: 321px)
-  body
 
 @media screen and (max-width: 635px)
   html
@@ -421,8 +420,3 @@ $title-color: #ED184C
     .wrap
       flex-direction: row
       justify-content: center
-
-
-
-@media screen and (min-width: 761px)
-  body

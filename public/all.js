@@ -19,7 +19,6 @@ $(function() {
     if( $menuMobile.style.display === "none" || $menuMobile.style.display === ""){
       $menuMobile.style.display = 'block'
       $menuClose.click(callMenuClose)
-      console.log($menuClose)
       setTimeout(function() {
           $menuMobile.style.right = '0'
       }, 100)
@@ -29,7 +28,6 @@ $(function() {
   }
 
   function callMenuClose() {
-      console.log('close')
       $menuMobile.style.right = '-2000px'
       setTimeout(() => {
       $menuMobile.style.display = 'none'
@@ -72,4 +70,22 @@ $(function() {
   }
   
   setTime($headerHomeH1, [fadeIn, leftToRight], 300)
+
+
+  /**
+   * Send Email
+   */
+  const $sendEmail = $('#sendEmail')
+  $sendEmail.click(() => {
+    let form = $('form')
+    let formData =$('#form_envia_email').serialize()
+    $.ajax({
+      type: 'POST',
+      url: form.attr('action'),
+      data: formData,
+      success: function(msg) {
+        console.log(msg)
+      }
+    })
+  })
 })

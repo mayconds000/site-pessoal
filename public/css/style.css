@@ -229,9 +229,11 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding-left: 10px;
+  padding-right: 10px; }
   .about-me h2 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin-bottom: 50px;
     padding-top: 100px;
     color: #ED184C; }
@@ -254,14 +256,14 @@ body {
       background: #ED184C; }
 
 .abilities {
-  background-color: #000428;
-  background: linear-gradient(to bottom right, #43cea2, #185a9d);
-  padding: 100px 0;
+  background-color: #43cea2;
+  background: linear-gradient(to bottom right, #43cea2, #00c9ff);
+  padding: 80px 0 100px;
   text-align: center;
   color: white;
   -webkit-transform: skewY(-5deg);
           transform: skewY(-5deg);
-  height: 100%;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,9 +278,11 @@ body {
       -ms-flex-align: center;
           align-items: center; }
   .abilities h2 {
-    font-size: 2.5em; }
+    font-size: 2.5rem;
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg); }
   .abilities .abilities-wrap {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 100%;
     max-width: 980px;
     display: -webkit-box;
@@ -287,7 +291,9 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg); }
     .abilities .abilities-wrap .abilities-wrap--item {
       margin-top: 25px;
       padding: 0 10px 10px;
@@ -309,7 +315,7 @@ body {
   .portfolio h2 {
     color: #ED184C;
     font-size: 2.5em;
-    margin-bottom: 50px; }
+    margin-bottom: 80px; }
   .portfolio a figure {
     width: 100%; }
     .portfolio a figure img {
@@ -324,7 +330,7 @@ body {
   padding: 50px 0;
   width: 100%; }
   .contact h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 50px; }
   .contact .wrap {
     margin: 0 auto;
@@ -334,14 +340,15 @@ body {
     .contact .wrap .form-contact {
       width: 280px;
       margin-right: 40px; }
-      .contact .wrap .form-contact input, .contact .wrap .form-contact textarea {
+      .contact .wrap .form-contact input, .contact .wrap .form-contact textarea, .contact .wrap .form-contact #sendEmail {
         font-size: 0.8em;
         width: 100%;
         margin-bottom: 10px;
         padding: 5px;
         line-height: 20px;
         border: 1px solid #ddd; }
-      .contact .wrap .form-contact input[type=submit] {
+      .contact .wrap .form-contact #sendEmail {
+        display: block;
         background-color: #43cea2;
         border: none;
         color: white;
@@ -349,7 +356,7 @@ body {
         cursor: pointer;
         transition: background-color 0.3s ease-in;
         border-radius: 3px; }
-        .contact .wrap .form-contact input[type=submit]:hover {
+        .contact .wrap .form-contact #sendEmail:hover {
           background-color: #ED184C; }
     .contact .wrap .contacts {
       text-align: center;
