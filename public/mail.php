@@ -19,7 +19,7 @@ $mensagem = $getPost['mensagem'];
 // Enviando o e-mail 
 $mail = new PHPMailer;
 $mail->isSMTP();
-$mail->Host = "br12.hostgator.com.br";
+$mail->Host = "smtp.mayconds.com";
 $mail->SMTPAuth = true;
 $mail->Username = "site@mayconds.com";
 $mail->Password = "Mxds@326";
@@ -41,3 +41,9 @@ $mail->Body = "Enviado por: {$nome} <br />
                   Telefone: {$telefone}<br /> 
                      Email: {$email}<br /> 
                   Mensagem: {$mensagem}";
+
+if(!$mail->send()) {
+  echo "error " . $mail->ErrorInfo;
+} else {
+  echo "success";
+}
